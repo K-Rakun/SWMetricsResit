@@ -15,6 +15,10 @@ class Tests(unittest.TestCase):
         with self.assertRaises(TypeError):
             wrapper("-3", 6)
 
+    def test_wrapper_without_args(self):
+        with self.assertRaises(TypeError):
+            wrapper()
+
 
 if __name__ == '__main__':
     unittest.main()
